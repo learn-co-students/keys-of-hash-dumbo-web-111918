@@ -1,13 +1,11 @@
 class Hash
-  def keys_of(*arrgs) 
-    new_array = []
-    arrgs.map do |key,value|
-      if value
-        new_array << key
+  def keys_of(*args) 
+    self.map do |key,value|
+      if args.include? value
+        key
       else 
-        return "wat" 
+        nil 
       end
-    end 
-  new_array.compact 
+    end.compact 
   end
 end
