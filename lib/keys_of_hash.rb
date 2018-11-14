@@ -12,4 +12,4 @@ class Hash
 end
 
 
-#look into using filter, or map and compact
+#look into using collect, or map and compact
